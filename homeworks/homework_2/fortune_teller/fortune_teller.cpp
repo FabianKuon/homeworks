@@ -13,7 +13,7 @@ int main() {
                                    {"autumn", "coding beast"},
                                    {"winter", "software design hero"}};
   string endings[] = {"eats UB for breakfast",
-                      "finds errors quicker than the compiler\'",
+                      "finds errors quicker than the compiler",
                       "is not afraid of C++ error messages"};
 
   cout << "Welcome to the fortune teller program!" << endl;
