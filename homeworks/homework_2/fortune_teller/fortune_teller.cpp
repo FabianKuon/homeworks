@@ -13,7 +13,7 @@ int main() {
                                    {"autumn", "coding beast"},
                                    {"winter", "software design hero"}};
   string endings[] = {"eats UB for breakfast",
-                      "finds errors quicker than the compiler\'",
+                      "finds errors quicker than the compiler'",
                       "is not afraid of C++ error messages"};
 
   cout << "Welcome to the fortune teller program!" << endl;
@@ -31,6 +31,6 @@ int main() {
   printf("%s, the %s %s that %s\n", name.c_str(),
          adjectives[name.length() % adjectives.size()].c_str(),
          noun.find(birthdayMonth)->second.c_str(),
-         endings[name.length() % endings->size()].c_str());
+         endings[name.length() % sizeof(endings)].c_str());
   return 0;
 }
