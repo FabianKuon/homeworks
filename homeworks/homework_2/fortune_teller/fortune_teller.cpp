@@ -28,7 +28,7 @@ int main() {
   cout << "Please enter another adjective:" << endl;
   cin >> adjectives[1];
 
-  cout << "\n" << name << ", the " << adjectives[name.length() % adjectives.size()]
+  cout << "\n" << "Here is your description:\n" << name << ", the " << adjectives[name.length() % adjectives.size()]
        << " " << noun.find(birthdayMonth)->second << " that "
        << endings[name.length() % (*(&endings + 1) - endings)];
   return 0;
