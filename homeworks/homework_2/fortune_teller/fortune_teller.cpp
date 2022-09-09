@@ -28,9 +28,8 @@ int main() {
   cout << "Please enter another adjective:" << endl;
   cin >> adjectives[1];
 
-  printf("%s, the %s %s that %s", name.c_str(),
-         adjectives[name.length() % adjectives.size()].c_str(),
-         noun.find(birthdayMonth)->second.c_str(),
-         endings[name.length() % (*(&endings + 1) - endings)].c_str());
+  cout << name << ", the " << adjectives[name.length() % adjectives.size()]
+       << " " << noun.find(birthdayMonth)->second << " that "
+       << endings[name.length() % (*(&endings + 1) - endings)] << endl;
   return 0;
 }
