@@ -30,6 +30,6 @@ int main() {
 
   cout << name << ", the " << adjectives[name.length() % adjectives.size()]
        << " " << noun.find(birthdayMonth)->second << " that "
-       << endings[name.length() % (*(&endings + 1) - endings)] << endl;
+       << endings[name.length() % (*(&endings + 1) - endings)];
   return 0;
 }
