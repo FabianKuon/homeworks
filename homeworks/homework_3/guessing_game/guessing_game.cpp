@@ -22,7 +22,7 @@ int main() {
   int tries = 0;
   while (true) {
     ++tries;
-    cout << "Please provide the next guess:";
+    cout << "Please provide the next guess: ";
     cin >> guess;
     if (guess < rand) {
       cout << "Your number is too small. Try again!" << endl;
