@@ -19,15 +19,19 @@ int main() {
   cout << "I've generated a number. Try to guess it!" << endl;
 
   int guess;
+  int tries = 0;
   while (true) {
-    cout << "Please provide the next guess:" << endl;
+    ++tries;
+    cout << "Please provide the next guess:";
     cin >> guess;
     if (guess < rand) {
       cout << "Your number is too small. Try again!" << endl;
     } else if (guess > rand) {
       cout << "Your number is too big. Try again!" << endl;
     } else {
-      break;
+      cout << "You've done it! You guessed the number" << rand << " in "
+           << tries << " guesses!'" << endl;
+      ;
     }
   }
 
