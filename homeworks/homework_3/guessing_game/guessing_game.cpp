@@ -30,7 +30,7 @@ int main() {
       cout << "Your number is too big. Try again!" << endl;
     } else {
       cout << "You've done it! You guessed the number " << rand << " in "
-           << tries << " guesses!'" << endl;
+           << tries << " guesses!'";
       break;
     }
   }
