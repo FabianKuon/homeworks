@@ -29,9 +29,8 @@ int main() {
     } else if (guess > rand) {
       cout << "Your number is too big. Try again!" << endl;
     } else {
-      cout << "You've done it! You guessed the number" << rand << " in "
+      cout << "You've done it! You guessed the number " << rand << " in "
            << tries << " guesses!'" << endl;
-      ;
     }
   }
 
