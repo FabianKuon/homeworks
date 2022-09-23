@@ -31,6 +31,7 @@ int main() {
     } else {
       cout << "You've done it! You guessed the number " << rand << " in "
            << tries << " guesses!'" << endl;
+      break;
     }
   }
 
